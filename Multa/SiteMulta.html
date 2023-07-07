@@ -1,0 +1,38 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Calculo de multa</title>
+    <style>
+    body {
+    background-color: rebeccapurple;
+    color: white;
+        }
+    span {
+         font-weight: bold;
+         color: red;
+    }
+    </style>
+</head>
+<body>
+    <center>
+        <form action="calculomulta.php" method="post">
+            <h1>Calculo da multa</h1>
+            <br><br><br>
+            <strong>Entre com os dados pedidos abaixo</strong>
+            <h3>Velocidade carro</h3>
+            <input type="number" name="velcar" id="velcar">
+            <h3>Velocidade da via(rua)</h3>
+            <input type="number" name="velrua" id="velrua">
+            <br><br><br>
+            <h3>Situação da multa</h3>
+            <select name="sitmulta" id="sitmulta">
+                <option value="N">Normal</option>
+                <option value="R">Racha</option>
+                <option value="O">Outras</option>
+            </select>
+            <input type="submit" value="CALCULO DA MULTA">
+            <input type="button" value="Limpar Campos">
+        </form>
+    </center>
+</body>
+</html>

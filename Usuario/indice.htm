@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 10vh;
+        }
+
+        section {
+            padding: 20px;
+            background-color: teal;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="usuario.php" method="post">
+            <h1>Nome do usuário</h1>
+            <input type="text" name="nome" placeholder="Digite seu nome">
+            <h1>Conteudo:</h1>
+            <br>
+            <textarea name="conteudo" cols="20" rows="5" placeholder="Digite o conteudo"></textarea>
+            <br><br>
+            <h1>Cor de fundo</h1>
+
+            <select name="corfundo">
+                <option value="white">Branco</option>
+                <option value="black">Preto</option>
+                <option value="pink">Rosa</option>
+                <option value="rebeccapurple">Roxo</option>
+            </select>
+            <br><br>
+            <h1>Cor de texto</h1>
+            <select name="corletra">
+                <option value="white">Branco</option>
+                <option value="black">Preto</option>
+                <option value="red">Vermelho</option>
+            </select>
+
+
+            <br><br>
+            <h1>Imagem</h1>
+            <select name="img">
+                <option value="pintinho.jpg">Pintinho</option>
+                <option value="rolinha.jpg">Rolinha</option>
+                <option value="raposa.jpeg">Raposa</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exército</title>
+</head>
+
+<body>
+    <h1>Exército</h1>
+    <form action="exercito.php" method="post">
+        <div>
+            <label for="idade">Digite sua idade</label>
+            <input type="number" name="idade" id="idade">
+        </div>
+        <br>
+        <div>
+            <label for="nome">Digite seu nome</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <br>
+        <div>
+            <span>Qual é o seu sexo?</span><br>
+            <select name="sexo" id="sexo">
+                <option value="F">Feminino</option>
+                <option value="M">Masculino</option>
+            </select>
+        </div>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

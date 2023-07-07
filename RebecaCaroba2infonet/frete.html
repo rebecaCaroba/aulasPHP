@@ -1,0 +1,45 @@
+<head>
+    <title>Sistema de Cálculo de Fretes</title>
+</head>
+<style>
+    body { font: 12pt Arial; }
+
+    span {
+        color: red;
+        font-weight: bold;
+    }
+    input[type="submit"]{
+        background-color: rebeccapurple;
+        color: white;
+    }
+</style>
+
+<body>
+    <h1>Sistema de Cálculo de Frete</h1>
+    <section class="figuras">
+        <form action="calcularfrete.php" method="post">
+            <label for="preco">Informe o valor do produto:</label>
+            <input type="number" step="0.01" placeholder="Valot do produto.." id="preco" name="preco">
+            <br><br>
+            <label for="peso">Digite o peso:</label>
+            <input type="number" name="peso" id="peso" step="0.01" placeholder="Digite o peso..">
+            <br><br>
+            <label for="local">Localização:</label>
+            <select name="local" id="local">
+                <option value="Guarulhos">Guarulhos</option>
+                <option value="Poa">Poá</option>
+                <option value="Suzano">suzano</option>
+            </select>
+            <br><br>
+            <label for="pagamento">Pagamento:</label>
+            <select name="pagamento" id="pagamento">
+                <option value="pix">Pix</option>
+                <option value="card">Cartão</option>
+            </select>
+            <p>Se a forma de pagamento for PIX, ganhara <span>5% de desconto</span>.</p>
+            <input type="submit" value="Calcular">
+        </form>
+    </section>
+</body>
+
+</html>

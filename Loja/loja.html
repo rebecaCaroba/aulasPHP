@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja do nenero</title>
+    <style>
+        body {
+            background-color: rebeccapurple;
+            color: white;
+            font-size: 40px;
+        }
+        input {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="calculodindin.php" method="post">
+        <h1>Venda:</h1>
+        <div>
+            <label for="prod">Digite o produto:</label>
+            <input type="text" name="prod" id="prod">
+        </div>
+        <br>
+        <div>
+            <label for="preco">Digite o preço</label>
+            <input type="number" name="preco" id="preco">
+        </div>
+        <br>
+        <!-- <h3>Preço: <span>R$12</span></h3> -->
+        <hr>
+        <div>
+            <label for="qtd">Digite a quantidade</label>
+            <input type="number" name="qtd" id="qtd">
+        </div>
+        <br>
+        <div>
+            <label for="dindin">Digite o valor a pagar.</label>
+            <input type="number" name="dindin" id="dindin">
+        </div>
+        <br>
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+
+</html>
